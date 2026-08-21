@@ -1,0 +1,24 @@
+/*
+   1
+  12
+ 123
+1234
+*/
+package class5_Pattern;
+
+public class rightNumTri {
+    public static void main(String[] args) {
+        for(int i=1; i<=4; i++){
+            //spaces
+            for(int j=0; j<4-i; j++)
+                System.out.print(" ");
+
+            //stars
+            for(int j=1; j<=i; j++){
+                System.out.print(j);
+            }
+
+            System.out.println();
+        }
+    }
+}
