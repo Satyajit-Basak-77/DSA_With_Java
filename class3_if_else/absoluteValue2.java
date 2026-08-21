@@ -1,5 +1,5 @@
 //ALTERNATE VERSION OF absoluteValue with only using if and not else 
-package class3HW;
+package class3_if_else;
 
 import java.util.Scanner;
 

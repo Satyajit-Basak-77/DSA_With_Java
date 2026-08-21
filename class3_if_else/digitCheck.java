@@ -1,5 +1,5 @@
 //check a number is 4 digit or not
-package class3HW;
+package class3_if_else;
 
 import java.util.Scanner;
 

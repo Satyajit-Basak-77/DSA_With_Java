@@ -1,4 +1,4 @@
-package class3HW;
+package class3_if_else;
 import java.util.*;
 public class absoluteValue {
     public static void main(String[] args) {
