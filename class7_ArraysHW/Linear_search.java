@@ -1,8 +1,8 @@
 package class7_ArraysHW;
 import java.util.*;
-public class search {
+public class Linear_search {
     public static void main(String[] args) {
-        int f=0;
+        boolean flag=false;
         int p=0;
         Scanner sc = new Scanner(System.in);
         int arr[] = {4, 5, 6, 34, 21, 32};
@@ -12,16 +12,17 @@ public class search {
         sc.close();
         for (int i=0; i<arr.length; i++){
             if(sea == arr[i]){ 
-                f=1;
+                flag=true;
                 p=i;
+                break;
             }
         }
         printarr(arr);
-        if(f==1) System.out.print("Found at position " + (p+1));
+        if(flag) System.out.print("Found at position " + (p+1)); // only 'flag' means flag==true and '!flag' means flag==flase and flag only just the variable name we can name it anything we want. 
         else System.out.println("Not found");
     }
 
-    public static void printarr(int[] a) {
+    public static void printarr(int[] a){
         Scanner sc = new Scanner(System.in);
         for(int i=0; i<a.length; i++){
             System.out.print(a[i] + " ");

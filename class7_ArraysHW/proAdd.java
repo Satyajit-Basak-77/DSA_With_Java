@@ -1,8 +1,6 @@
 package class7_ArraysHW;
-
-import java.util.Scanner;
-
-public class min {
+import java.util.*;
+public class proAdd {
     public static void inputarr(int[] a) {
         Scanner sc = new Scanner(System.in);
         for(int i=0; i<a.length; i++){
@@ -22,17 +20,16 @@ public class min {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter size: ");
         int n = sc.nextInt();
-        int arr[] = new int[n];
-        inputarr(arr);
-        int min = arr[0];
-        printarr(arr);
-        for(int i=0; i<arr.length; i++){
-            if(arr[i]<min)
-                min = arr[i];
+        int[] num = new int[n];
+        inputarr(num);
+        printarr(num);
+        for(int i=0; i<num.length; i++){
+            if(i%2!=0) num[i]*=2;
+            else num[i]+=10;
         }
-        System.out.println("The min element is: " + min);
+        System.out.print("Now the edited one is: ");
+        printarr(num);
         sc.close();
     }
 }

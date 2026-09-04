@@ -1,8 +1,8 @@
-package class7_ArraysHW;
+package class7_Arrays;
 
 import java.util.Scanner;
 
-public class min {
+public class TwoSum {
     public static void inputarr(int[] a) {
         Scanner sc = new Scanner(System.in);
         for(int i=0; i<a.length; i++){
@@ -13,7 +13,6 @@ public class min {
     }
     public static void printarr(int[] a) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Array is: ");
         for(int i=0; i<a.length; i++){
             System.out.print(a[i] + " ");
         }
@@ -21,18 +20,17 @@ public class min {
         sc.close();
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter size: ");
-        int n = sc.nextInt();
-        int arr[] = new int[n];
-        inputarr(arr);
-        int min = arr[0];
-        printarr(arr);
-        for(int i=0; i<arr.length; i++){
-            if(arr[i]<min)
-                min = arr[i];
+        int[] num = new int[10];
+        inputarr(num);
+        printarr(num);
+        int target = 5;
+        System.out.println("Two sum: ");
+        for(int i=0; i<num.length; i++){
+            for(int j=i+1; j<num.length; j++){
+                if(num[i] + num[j] == target){
+                    System.out.println( num[i] + " & " + num[j]);
+                }
+            }
         }
-        System.out.println("The min element is: " + min);
-        sc.close();
     }
 }
